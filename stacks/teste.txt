@@ -1,0 +1,7 @@
+we ensure that there will be a separating newline in the result.
+lowed (without newline) by the original second-to-last line. In our implementation,
+the lines read from the file in reverse order, then the original last line would be fol-
+original file does not have a trailing newline for the final line. If we exactly echoed
+the resulting file. Our reason for doing this is to handle a special case in which the
+from lines as they are read, and then re-insert newlines after each line when writing
+One technical detail worth noting is that we intentionally strip trailing newlines
